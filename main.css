@@ -1,0 +1,339 @@
+/* ---  SOMMAIRE  --- */
+/* NAV BAR 23 */
+/* LOGo 115 */
+/* SEARCH BAR 130 */
+/* BOUTONS RECHERCHE GOOGLE... 229 */
+/* FOOTER 275*/
+
+/* CODE HTML CSS SITE GOOGLE */
+
+/* BADASS WEBDEV */
+/* J'ai quelques problèmes que je n'ai pas réussi à résoudre*/
+/* ----  RESET   ----- */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-sherif;
+}
+body{ /* Couleur*/
+background-color: #202124;
+
+}
+
+/*---- NAV BAR ----*/
+.container-general{ /*block section attibution comportement générale des blocks positionnés à l'intérieur */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.box-nav{ /* container block*/
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    
+}
+.inblock-nav{ /* block de définition nav attribut et comportement des sous block */
+    display: inline-block;
+    flex-grow: 1;
+    height: 48px;
+
+}
+.box-button-nav{ /* block de définition nav attribut et comportement */
+    display: flex;
+    float: right;
+    box-sizing: border-box;
+    height: 48px;
+    line-height: normal;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+
+    
+}
+
+.button{ /* block du block */
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+ 
+}
+.button a{ /* block buttons a1 a2 a3 a4 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    vertical-align: middle;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+}
+
+#a1{ /* Gmail lien */
+    padding: 0px 0px 0px 0px;
+}
+#a2{ /* Images lien */
+    padding: 0px 25px 0px 50px;
+}
+#a3{ /* block image nav bar petit boutons */
+    padding: 8px;
+    height: 48px;
+    width: 48px;
+    margin: 0;
+}
+
+#a4{ /* block image nav bar cercle */
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    height: 48px;
+    width: 48px;
+    margin: 0;
+}
+#a3 img{ /* image nav bar */
+    display: block;
+    margin: 0;
+    padding: 14px;
+}
+#a4 img{ /* image nav bar */
+    display: block;
+    margin: 0;
+    padding: 10px;
+}
+
+/* BOITE LOGO */
+.logo{ /*Block logo à vide container comportement et place*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-top: 198px;
+    justify-content: center;
+  }
+.imglogo{ /*Image logo dimension responsive*/
+    max-height: 100%;
+    max-width: 100%;
+}
+/* BOITE SEARCH BAR */
+.search-bar{ /*Bar de recherche container block*/
+padding: 20px;
+max-height: 160px;
+flex-shrink: 0;
+box-sizing: border-box;
+}
+.js-controller{ 
+    margin: 0 auto;
+    padding-top: 6px;
+    width: auto;
+
+    position: relative;
+}
+.box-search{
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+}
+form{
+padding: 0px;
+margin: 0px;
+}
+
+.boxsearch-button{
+    flex: 2;
+    padding: 5px 13px 0px 8px;
+    box-shadow: none;
+    border-radius: 24px;
+}
+.loop{ /*container block d'image loupe*/
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    background-color: transparent;
+}
+.imgloop{/*attribut image loupe*/
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    background-color: transparent;
+}
+
+.controlsearch{ /*Container de l'input de saisie de texte*/
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: transparent;
+ 
+}
+.writer{ /*sous-container de l'input de saisie de texte*/
+    display: flex;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+.writeraction{ /*Attribut de l'input de saisie de texte*/
+    background-color: grey;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    word-wrap: break-word;
+    outline: none;
+    width: 450px;
+}
+
+.vocal{ /*Attribut de la div micro*/
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    padding-left: 10 px;
+    align-items: stretch;
+    flex-direction: row;
+}
+.photo{ /*Attribut de la div appareil photo*/
+    background-color: transparent;
+    padding-left: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+/*BUTTONS RECHERCHE GOOGLE*/
+.buttons{ /* Propriété du Bloc Recherche google / J'ai de la chance*/
+display: block;
+height: 70px;
+padding-top: 18px;
+
+}
+.google{ /* Bouton Google*/
+border: 1px solid #dfe1e5;
+border-radius: 3px;
+color: #202124;
+font-size: 14px;
+margin: 11px 4px;
+padding: 0 16px;
+height: 36px;
+line-height: 27px;
+min-width: 54px;
+text-align: center;
+cursor: pointer;
+user-select: none;
+
+}
+.lucky{ /* Bouton Google*/
+    border: 1px solid #dfe1e5;
+    border-radius: 3px;
+    color: #202124;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*BLOCK OCCUPATION PAGE*/
+.pageblock{ /* Block d'occupation d'espace*/
+display: block;
+flex-grow: 1;
+flex-shrink: 0;
+box-sizing: border-box;
+padding: 5px;
+height: 534px;
+}
+/*FOOTER*/
+.footer{
+    
+    display: block;
+    background-color: #171717;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+
+}
+/*France*/
+.footer p{
+    color: #dadce0;
+}
+.carbone{ /*Container block*/
+    display: flex;
+    order: 0;
+    width: 100%;
+    justify-content: center;
+
+}
+.carbone{ /* block inter*/
+    display: flex;
+    padding: 15px;
+    white-space: nowrap;
+    
+}
+
+.span{ /*propriété du span carbone*/
+    font-size: 14px;
+    text-decoration: none;
+    color: #dadce0;
+    vertical-align: top;
+}
+.carbone img{ /*propriété de l'icone carbone*/
+    height: 14px;
+}
+/* Block bas de page liens*/
+.lienfooter1{ /*Propriétées block liens*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    order: 1;
+}
+.lienfooter1 a{ /*Propriétées des liens*/
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #dadce0;
+    font-size: 14px;
+    text-decoration: none;
+ }
+ .lienfooter2{ /*Propriétées block liens*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    order: 1;
+}
+.lienfooter2 a{ /*Propriétées des liens*/
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #dadce0;
+    font-size: 14px;
+    text-decoration: none;
+ }
